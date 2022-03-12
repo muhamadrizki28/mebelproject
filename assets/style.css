@@ -559,6 +559,8 @@ footer .contactt img {
 }
 footer .contactt p {
   margin-top: 3px;
+  margin-left: 20px;
+  /* background-color: #fff; */
   font-size: 13px;
 }
 .bottom {
