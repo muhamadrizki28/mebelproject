@@ -14,10 +14,10 @@
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
       <section>
-        <nav>
+        <nav class="a">
           <div class="logo">
             <!-- <img src="" alt=""> -->
             <h1>LOGO</h1>
@@ -26,13 +26,18 @@
             <li><a href="">Home</a></li>
             <li id="produk">
               <a href="">Products</a>
-              <!-- <ul>
+              <ul>
                 <li><a href="">Lemari</a></li>
                 <li><a href="">Meja</a></li>
-              </ul> -->
+              </ul>
             </li>
             <li><a href="">Contact</a></li>
           </ul>
+          <div class="mobile-bar">
+            <span class="mobile-bar1 mobile-bar-all"></span>
+            <span class="mobile-bar2 mobile-bar-all"></span>
+            <span class="mobile-bar3 mobile-bar-all"></span>
+          </div>
         </nav>
       </section>
     </header>
@@ -119,19 +124,7 @@
             <div class="box-menu3 box-menu-all"></div>
           </div> -->
           <div class="product-image">
-            <section class="gallery">
-              <div class="gallery__item">
-                <input type="radio" name="gallery" id="img-1" checked class="gallery__selector" />
-                <div class="box-image-all box-imagee1">
-                  <img src="assets/img/folksniture/lemari_sorong_kecil.jpg" class="gallery__img" />
-                  <img src="assets/img/folksniture/4. detail motiff.JPG" alt="Gambar disini" class="gallery__img" />
-                  <img src="assets/img/folksniture/4. depan.JPG" alt="" class="gallery__img" />
-                  <img src="assets/img/folksniture/motif.jpg" alt="" class="gallery__img" />
-                  <img src="assets/img/folksniture/6. lemari kecil serong kanan.jpg" alt="" class="gallery__img" />
-                  <img src="assets/img/folksniture/20_serong kanan_compress41.jpg" alt="" class="gallery__img" />
-                </div>
-                <label for="img-1" class="gallery__thumb gallery__thumb1"> <h1>LEMARI</h1> </label>
-              </div>
+            <section class="gallery" style="overflow: hidden">
               <div class="gallery__item">
                 <input type="radio" name="gallery" id="img-2" checked class="gallery__selector" />
                 <div class="box-image-all box-imagee2">
@@ -170,8 +163,20 @@
                   <img src="assets/img/folksniture/13_serong kanan_compress14.jpg" alt="Gambar disini" class="gallery__img" />
                 </div>
                 <label for="img-4" class="gallery__thumb gallery__thumb4">
-                  <h1>Rak</h1>
+                  <h1>Bangku lagi</h1>
                 </label>
+              </div>
+              <div class="gallery__item">
+                <input type="radio" name="gallery" id="img-1" checked class="gallery__selector" />
+                <div class="box-image-all box-imagee1">
+                  <img src="assets/img/folksniture/lemari_sorong_kecil.jpg" class="gallery__img" />
+                  <img src="assets/img/folksniture/4. detail motiff.JPG" alt="Gambar disini" class="gallery__img" />
+                  <img src="assets/img/folksniture/4. depan.JPG" alt="" class="gallery__img" />
+                  <img src="assets/img/folksniture/motif.jpg" alt="" class="gallery__img" />
+                  <img src="assets/img/folksniture/6. lemari kecil serong kanan.jpg" alt="" class="gallery__img" />
+                  <img src="assets/img/folksniture/20_serong kanan_compress41.jpg" alt="" class="gallery__img" />
+                </div>
+                <label for="img-1" class="gallery__thumb gallery__thumb1"> <h1>LEMARI</h1> </label>
               </div>
             </section>
           </div>
@@ -256,12 +261,18 @@
       <div class="bottom">&copy; All rights reserved | 2022 | Folskniture</div>
     </footer>
 
+    <div class="back-to-top">
+      <a href="#body"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
     <!-- Aos JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 1200,
       });
     </script>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,48 @@
+@media only screen and (max-width: 480px) {
+  .mobile-bar {
+    position: relative;
+    top: 30%;
+    display: block;
+  }
+  header nav ul {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    /* top: 100%; */
+    z-index: 999;
+    /* ... */
+    left: 15%;
+    top: 336%;
+  }
+  header nav ul li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* .. */
+    display: flex;
+    flex-direction: column;
+  }
+  header nav ul li a {
+    margin: auto;
+    font-size: 1.5em;
+  }
+  header nav ul #produk::after {
+    position: absolute;
+    margin: auto 5px;
+    right: 5em;
+    top: 0.6em;
+  }
+
+  header nav ul ul {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+  header nav ul ul li a {
+    font-size: 1em;
+  }
+}
