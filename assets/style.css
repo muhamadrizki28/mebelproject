@@ -111,7 +111,7 @@ main {
   padding: 8rem 0;
 }
 .top-box1 .text1,
-.top-box1 .text2 span,
+.top-box1 .text1 span,
 .top-box1 .text2 {
   font-family: 'Secular One', sans-serif;
   font-size: 55px;
@@ -140,6 +140,11 @@ main {
 .top-box .box-contact p {
   font-weight: 500;
   font-size: 14px;
+}
+.top-box1 .text1 span {
+  /* display: none; */
+  margin-right: 0.1em;
+  float: left;
 }
 
 .top-box2 {
