@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Cadmin extends BaseController
+class Admin extends BaseController
 {
     public function index()
     {
@@ -10,6 +10,6 @@ class Cadmin extends BaseController
             'title' => 'Home Admin'
         ];
 
-        return view('admin/home/v_home_admin', $data);
+        return view('admin/home/home', $data);
     }
 }
