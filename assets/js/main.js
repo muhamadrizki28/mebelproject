@@ -41,3 +41,10 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 });
+$(document).ready(function () {
+  $('.box-pilihan-product h1').click(function () {
+    $('.gallery__item .gallery__thumb').toggleClass('active');
+    $('.gallery__item .box-image-all').toggleClass('active');
+    $(this).toggleClass('active');
+  });
+});
