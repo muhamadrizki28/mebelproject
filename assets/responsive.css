@@ -6,17 +6,24 @@
   }
   header nav ul {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #141414;
     /* top: 100%; */
-    z-index: 999;
+    /* z-index: 999; */
     /* ... */
-    left: 15%;
+    left: 29%;
+    top: -230%;
+    /* top: 336%; */
+    z-index: -9;
+    transition: 1s ease-in-out;
+  }
+  header nav ul.active {
     top: 336%;
+    z-index: 999;
   }
   header nav ul li {
     position: relative;
@@ -26,6 +33,9 @@
     display: flex;
     flex-direction: column;
   }
+  header nav #produk {
+    cursor: pointer;
+  }
   header nav ul li a {
     margin: auto;
     font-size: 1.5em;
@@ -33,16 +43,59 @@
   header nav ul #produk::after {
     position: absolute;
     margin: auto 5px;
-    right: 5em;
+    right: 1.5em;
     top: 0.6em;
   }
+  /* header nav ul #produk.active::before {
+    content: '\f00d';
+    position: absolute;
+    margin: auto 5px;
+    right: 1.5em;
+    top: 0.6em;
+  } */
 
   header nav ul ul {
     position: relative;
+    display: flex;
     left: 0;
     width: 100%;
   }
   header nav ul ul li a {
     font-size: 1em;
+  }
+  header nav ul ul.active {
+    display: none;
+  }
+
+  /* main */
+  .top-box .top-box1 {
+    width: 100%;
+  }
+  .top-box1 .text1,
+  .top-box1 .text1 span {
+    font-size: 10vw;
+  }
+  .top-box1 .text2 {
+    font-size: 10vw;
+    margin-bottom: 0.5rem;
+  }
+  .top-box1 .box-contact {
+    margin: 2rem auto;
+  }
+  .top-box2 {
+    display: none;
+  }
+
+  /* middle box */
+  .middle-box section .middle-box-all {
+    top: 0;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .middle-box-all .middle-box1,
+  .middle-box2,
+  .middle-box3 {
+    height: 0;
+    flex: 0 0 80%;
   }
 }

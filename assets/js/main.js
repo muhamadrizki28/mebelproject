@@ -33,6 +33,11 @@ $(document).ready(function () {
     $('.mobile-bar1').toggleClass('active');
     $('.mobile-bar2').toggleClass('active');
     $('.mobile-bar3').toggleClass('active');
-    $('.a').toggleClass('active');
+  });
+});
+$(document).ready(function () {
+  $('#produk').click(function () {
+    $('nav ul ul').toggleClass('active');
+    $(this).toggleClass('active');
   });
 });

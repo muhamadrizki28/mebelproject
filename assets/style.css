@@ -27,6 +27,9 @@ header nav {
   align-items: center;
   color: #fff;
 }
+header nav #produk {
+  cursor: pointer;
+}
 header nav .logo h1 {
   font-weight: 800;
   font-size: 18px;
@@ -47,6 +50,10 @@ header nav ul #produk::after {
   display: block;
   font-weight: bold;
   margin: 1.5px 0 0 5px;
+  transition: 0.5s ease-in-out;
+}
+header nav ul #produk.active::after {
+  transform: rotate(180deg);
 }
 header nav ul li a {
   text-decoration: none;
@@ -60,20 +67,26 @@ header nav ul ul {
   z-index: 3;
   top: 101%;
   left: 22%;
-  display: flex;
+  display: none;
   width: 150px;
   height: 8rem;
   flex-direction: column;
   background-color: #141414;
 }
+header nav ul ul.active {
+  display: flex;
+}
 header nav ul ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid gray;
+  border-bottom: 1px solid gray;
   margin: 0;
   width: 100%;
   height: 100%;
+}
+header nav ul ul li:hover {
+  background: rgba(128, 128, 128, 0.2);
 }
 header nav ul ul li a {
   color: #fff;
@@ -188,7 +201,7 @@ main {
   position: relative;
   width: 100%;
   /* Ganti % */
-  height: 100vh;
+  height: 70vh;
 }
 .middle-box .middle-color1 {
   width: 100%;
@@ -214,25 +227,29 @@ main {
   width: 100%;
   height: 60%;
   background-color: #fff;
+  border-radius: 10px;
 }
 .middle-box-all .middle-box1,
 .middle-box2,
-.middle-box3 {
+.middle-box3,
+.middle-box4 {
   position: relative;
-  margin: 2.5rem auto;
+  margin: 2rem 3rem;
   width: 302px;
   height: 80%;
 }
 .middle-box-all .middle-box1 .middel-box-icon,
 .middle-box2 .middel-box-icon,
-.middle-box3 .middel-box-icon {
+.middle-box3 .middel-box-icon,
+.middle-box4 .middel-box-icon {
   position: relative;
   width: 100%;
-  height: 40%;
+  height: 50%;
 }
 .middle-box-all .middle-box1 .middel-box-text,
 .middle-box2 .middel-box-text,
-.middle-box3 .middel-box-text {
+.middle-box3 .middel-box-text,
+.middle-box4 .middel-box-text {
   position: relative;
   width: 100%;
   height: 60%;
@@ -249,7 +266,7 @@ main {
   font-weight: 400;
   font-size: 14px;
   /* line-height: 21px; */
-  text-align: justify;
+  text-align: center;
   color: #141e27;
 }
 .middle-box-all .middel-box-text p::first-letter {
@@ -450,6 +467,64 @@ main {
   background: #455564;
   border-radius: 10px;
   color: #000;
+}
+.product-box .product-box-other {
+  position: relative;
+  width: 100%;
+  /* ganti % */
+  height: 100%;
+  padding-bottom: 10rem;
+}
+.product-box .box-other-text,
+.product-box .box-other-image {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+.product-box .box-other-text h1 {
+  position: relative;
+  font-family: 'Secular One', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 46px;
+  /* line-height: 52px; */
+  letter-spacing: 0.2em;
+  color: #fff;
+  cursor: default;
+}
+.product-box .product-box-other .box-other-image {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.product-box-other .box-other-image .box-other-all::before {
+  content: '';
+  display: block;
+  width: 53px;
+  height: 55px;
+  background: #353025;
+  margin: 0 2.5rem;
+}
+.box-other-image .box-other-all:nth-child(even)::before {
+  position: relative;
+  top: 10%;
+}
+.product-box-other .box-other-image .box-other-all img {
+  position: relative;
+  z-index: 2;
+  top: -32%;
+  left: 35%;
+  width: 54px;
+  height: 54px;
+}
+.box-other-image .box-other-all:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+}
+.box-other-image .box-other-all:hover::before {
+  border-radius: 50px;
+  transition: 1s ease-in-out;
+  border: 1px solid gray;
 }
 .mobile-bar3.active {
   display: none;
