@@ -151,6 +151,9 @@
   .product-box .box-other-text h1 {
     font-size: 10vw;
   }
+  .product-box-other .box-other-image {
+    overflow-x: hidden;
+  }
   .box-pilihan-product {
     display: flex;
     margin-top: 40px;
