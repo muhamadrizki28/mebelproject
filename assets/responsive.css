@@ -152,7 +152,7 @@
     font-size: 10vw;
   }
   .product-box-other .box-other-image {
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .box-pilihan-product {
     display: flex;
@@ -319,5 +319,51 @@
   }
   main .box-main3-slg a .btn-contact p {
     font-size: 5vw;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  header nav ul #produk::after {
+    right: 1em;
+    top: 0.4em;
+  }
+  .mobile-bar {
+    right: 5%;
+  }
+  .middle-box-all .middle-box1 .middel-box-icon,
+  .middle-box2 .middel-box-icon,
+  .middle-box3 .middel-box-icon,
+  .middle-box4 .middel-box-icon {
+    margin: -0.6rem auto;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+  }
+  .middle-box-all .middle-box1 .middel-box-text,
+  .middle-box2 .middel-box-text,
+  .middle-box3 .middel-box-text,
+  .middle-box4 .middel-box-text {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+  }
+  .gallery__thumb1,
+  .gallery__thumb2,
+  .gallery__thumb3,
+  .gallery__thumb4 {
+    padding-left: 13%;
+  }
+  .gallery__thumb1 h1,
+  .gallery__thumb2 h1,
+  .gallery__thumb3 h1,
+  .gallery__thumb4 h1 {
+    position: relative;
+    width: 46vw;
+    font-size: 5.5vw;
+  }
+  .box-other-image .box-other-all {
+    flex: 0 0 50%;
+    width: 50%;
   }
 }
