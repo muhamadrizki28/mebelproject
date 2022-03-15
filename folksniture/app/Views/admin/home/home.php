@@ -5,62 +5,42 @@
 <div class="row">
     
               <div class="col-12">
+                
+                <form action="/admin/save" method="POST"> 
+                  <?= csrf_field(); ?> 
                 <div class="card">
                   <div class="card-header">
                     <h4>Header</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="judul_satu" placeholder="Judul Pertama">
-                      </div>
-                      <div class="form-group col-md-6">                        
-                        <input type="text" class="form-control" id="judul_dua" placeholder="Judul Kedua">
-                      </div>
-                    </div>        
-                    <div class="form-group">
-                      <textarea style="height:100px;" class="form-control" placeholder="Keterangan Header"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="judul_satu" placeholder="Nomor Whatsapp">
-                      </div>
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">Pilih foto header</label>
-                    </div>
-                  </div>
-                  <div class="card-footer text-right">
-                    <button class="btn btn-primary mr-1" type="submit">Submit</button>
-                    <button class="btn btn-secondary" type="reset">Reset</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <h4> Benefit</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                      <textarea style="height:100px;" class="form-control" placeholder="Benefit 1"></textarea>
-                      </div>
-                      <div class="form-group col-md-6">                        
-                      <textarea style="height:100px;" class="form-control" placeholder="Benefit 2"></textarea>
-                      </div>
-                    </div>    
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                      <textarea style="height:100px;" class="form-control" placeholder="Benefit 3"></textarea>
-                      </div>
-                      <div class="form-group col-md-6">                        
-                      <textarea style="height:100px;" class="form-control" placeholder="Benefit 4"></textarea>
-                      </div>
-                    </div>   
                   
+                  <div class="card">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php foreach ($header as $h) : ?>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td><?= $h['judul_1']; ?></td>
+                          <td><?= $h['judul_2']; ?></td>
+                          <td><a href="/admin/edit/<?= $h['id'] ?> "><b>EDIT</b></a></td>
+                        </tr>
+                        <?php endforeach; ?>
+                      </tbody>
+                    </table>
+                  </div>
+
+                
                   </div>
                   <div class="card-footer text-right">
                     <button class="btn btn-primary mr-1" type="submit">Submit</button>
-                    <button class="btn btn-secondary" type="reset">Reset</button>
                   </div>
                 </div>
 
