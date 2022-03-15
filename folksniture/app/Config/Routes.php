@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Cadmin::index');
+$routes->get('/', 'Admin::index');
+$routes->get('/admin/edit/(:segment)', 'Admin::edit/$1');
 
 /*
  * --------------------------------------------------------------------

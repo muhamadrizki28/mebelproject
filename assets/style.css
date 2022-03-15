@@ -147,6 +147,11 @@ main {
   height: 33px;
   border: 2px solid #000;
 }
+.top-box1 .box-contact a {
+  text-decoration: none;
+  text-align: center;
+}
+
 .top-box1 .box-contact .fa-whatsapp {
   margin: 0.1rem 0.5rem 0 0;
 }
@@ -304,6 +309,7 @@ main {
 .product-box .product-top-text {
   position: relative;
   width: 100%;
+  padding-top: 70px;
   height: 20%;
   text-align: center;
   /* background-color: green; */
@@ -314,6 +320,8 @@ main {
   font-family: "Secular One";
   font-weight: 400;
   font-size: 96px;
+
+  padding-bottom: 30px;
 }
 .product-box .product-top-text p {
   position: relative;
@@ -482,7 +490,7 @@ main {
 }
 .product-box .box-other-text h1 {
   position: relative;
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   text-align: center;
   font-weight: 400;
   font-size: 46px;
@@ -498,7 +506,7 @@ main {
   justify-content: center;
 }
 .product-box-other .box-other-image .box-other-all::before {
-  content: '';
+  content: "";
   display: block;
   width: 53px;
   height: 55px;
