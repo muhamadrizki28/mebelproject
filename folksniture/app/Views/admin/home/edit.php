@@ -6,37 +6,61 @@
     
               <div class="col-12">
                 
-                <form action="/admin/save" method="POST"> 
+                <form action="/admin/update/1" method="POST"> 
                   <?= csrf_field(); ?> 
                 <div class="card">
-                  <div class="card-header">
+
+                  <div class="card-header ">
                     <h4>Header</h4>
                   </div>
                   
-                  <div class="card-body">
+                  <div class="card-body" >
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="judul_1" name="judul_1" placeholder="Judul Pertama">
+                        <input type="hidden" value="<?= $header['id']; ?>">
+                        <label for="">Judul 1</label>
+                        <input type="text" class="form-control" id="judul_1" name="judul_1" value="<?= $header['judul_1']; ?>">
                       </div>
-                      <div class="form-group col-md-6">                        
-                        <input type="text" class="form-control" id="judul_2" name="judul_2" placeholder="Judul Kedua">
+                      <div class="form-group col-md-6">       
+                      <label for="">Judul 2</label>                 
+                        <input type="text" class="form-control" id="judul_2" name="judul_2" value="<?= $header['judul_2']; ?>">
                       </div>
                     </div>        
                     <div class="form-group">
-                      <textarea style="height:100px;" class="form-control" id="deskripsi" name="deskripsi" placeholder="Keterangan Header"></textarea>
+                    <label for="">Deskripsi</label>
+                      <textarea style="height:100px;" class="form-control" id="deskripsi" name="deskripsi" value="<?= $header['deskripsi']; ?>"><?= $header['deskripsi']; ?></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="no_wa" name="no_Wa" placeholder="Nomor Whatsapp">
+                    <label for="">Nomor Whatsapp</label>
+                        <input type="text" class="form-control" id="no_wa" name="no_Wa" value="<?= $header['no_wa']; ?>">
                       </div>
+                      <label style="padding-left: 5px;" for="">foto header</label>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="img_header" name="img_header">
-                      <label class="custom-file-label" for="img_header">Pilih foto header</label>
+                      <input type="file" class="custom-file-input" id="img_header" name="img_header" value="<?= $header['img_header']; ?>"> 
+                      <label class="custom-file-label" for="img_header"><?= $header['img_header']; ?></label>
                     </div>
                   </div>
                   <div class="card-footer text-right">
                     <button class="btn btn-primary mr-1" type="submit">Submit</button>
                   </div>
                 </div>
+                </form>
+
+                <form action="">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Header Image</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="img_header" name="img_header" value="<?= $header['img_header']; ?>"> 
+                        <label class="custom-file-label" for="img_header"><?= $header['img_header']; ?></label>
+                      </div>
+                    </div>
+                    <div class="card-footer text-right">
+                      <button class="btn btn-primary mr-1" type="submit">Submit</button>
+                    </div>
+                  </div>
                 </form>
 
                 <div class="card">
@@ -60,11 +84,9 @@
                       <textarea style="height:100px;" class="form-control" placeholder="Benefit 4"></textarea>
                       </div>
                     </div>   
-                  
                   </div>
                   <div class="card-footer text-right">
                     <button class="btn btn-primary mr-1" type="submit">Submit</button>
-                    <button class="btn btn-secondary" type="reset">Reset</button>
                   </div>
                 </div>
 

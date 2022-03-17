@@ -250,15 +250,8 @@
             
               <li class="menu-header">Admin</li>
               <li><a class="nav-link" href="/admin"><i class="fas fa-pencil-ruler"></i> <span>Dashboard</span></a></li>
-              <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Home Pages</span></a></li>
-
-              <li class="nav-item dropdown">
-                <a href="" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Home </span></a>
-                <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
-                  <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
-                </ul>
-              </li>
+              <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Header</span></a></li>
+              <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Benefit</span></a></li>
               <li class="menu-header">gatau ini nanti diisi apaan</li>
               <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>test</span></a></li>
               </ul>
