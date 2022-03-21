@@ -41,6 +41,14 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 });
+const btnn = document.querySelector('.top-box1 .box-contact');
+btnn.onmousemove = function (e) {
+  const x = e.pageX - btnn.offsetLeft;
+  const y = e.pageY - btnn.offsetTop;
+
+  btnn.style.setProperty('--x', `${x}px`);
+  btnn.style.setProperty('--y', `${y}px`);
+};
 $(document).ready(function () {
   $('.box-pilihan-product h1').click(function () {
     $('.gallery__item .gallery__thumb').toggleClass('active');
