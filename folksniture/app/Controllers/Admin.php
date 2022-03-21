@@ -27,10 +27,10 @@ class Admin extends BaseController
     {
         $header = $this->headerModel->where(['id' => $id])->first();
         $data = [
-            'title'     => 'Home Admin',
+            'title'     => 'Header Admin',
             'header'    => $header
         ];
-        return view('admin/home/edit.php', $data);
+        return view('admin/home/header.php', $data);
     }
 
     public function update($id)
@@ -43,7 +43,7 @@ class Admin extends BaseController
 			'no_Wa' => $this->request->getVar('no_Wa'),
 		]);
 
-        return redirect()->to('admin/edit/'.$id);
+        return redirect()->to('admin/header/'.$id);
     }
     
     public function updateimg($id)
@@ -65,7 +65,7 @@ class Admin extends BaseController
         }
         
 
-        return redirect()->to('admin/edit/'.$id);
+        return redirect()->to('admin/header/'.$id);
     }
 
     // public function create()

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/dashboard/assets/css/components.css">
 
   <!-- Css native -->
-  <link rel="stylesheet" href="/assets/style_dashboard.css">
+  <link rel="stylesheet" href="/assets/style-dashboard.css">
 </head>
 
 <body>
@@ -254,7 +254,7 @@
               <li class="menu-header">Admin</li>
               <li><a class="nav-link" href="/admin"><i class="fas fa-pencil-ruler"></i> <span>Dashboard</span></a></li>
               <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Header</span></a></li>
-              <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Benefit</span></a></li>
+              <li><a class="nav-link" href="/benefit/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Benefit</span></a></li>
               <li class="menu-header">gatau ini nanti diisi apaan</li>
               <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>test</span></a></li>
               </ul>
