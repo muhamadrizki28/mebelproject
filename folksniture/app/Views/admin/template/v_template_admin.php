@@ -14,6 +14,9 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="/dashboard/assets/css/style.css">
   <link rel="stylesheet" href="/dashboard/assets/css/components.css">
+
+  <!-- Css native -->
+  <link rel="stylesheet" href="/assets/style_dashboard.css">
 </head>
 
 <body>

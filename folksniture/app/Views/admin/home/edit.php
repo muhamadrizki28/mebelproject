@@ -34,11 +34,6 @@
                     <label for="">Nomor Whatsapp</label>
                         <input type="text" class="form-control" id="no_wa" name="no_Wa" value="<?= $header['no_wa']; ?>">
                       </div>
-                      <label style="padding-left: 5px;" for="">foto header</label>
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="img_header" name="img_header" value="<?= $header['img_header']; ?>"> 
-                      <label class="custom-file-label" for="img_header"><?= $header['img_header']; ?></label>
-                    </div>
                   </div>
                   <div class="card-footer text-right">
                     <button class="btn btn-primary mr-1" type="submit">Submit</button>
@@ -46,16 +41,25 @@
                 </div>
                 </form>
 
-                <form action="">
+                <form action="/admin/updateimg/1" method="POST" enctype="multipart/form-data">
+                <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
+
                   <div class="card">
                     <div class="card-header">
                       <h4>Header Image</h4>
                     </div>
-                    <div class="card-body">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="img_header" name="img_header" value="<?= $header['img_header']; ?>"> 
-                        <label class="custom-file-label" for="img_header"><?= $header['img_header']; ?></label>
+                    <div class="card-body" style="display: flex;">
+                      <div class="foto-dashboard" style="background-image: url(/assets/img/<?= $header['img_header']; ?>);">
+                        <!-- <img src="/assets/img/" alt="">  -->
                       </div>
+                      <div class="form-group" style="width: 100%;" >
+                          <label for="formGroupExampleInput">Ubah Foto*</label>
+                          <input type="file" value="<?= $header['img_header']; ?>" name="img_header" class="form-control">
+                        </div>
                     </div>
                     <div class="card-footer text-right">
                       <button class="btn btn-primary mr-1" type="submit">Submit</button>

@@ -240,7 +240,7 @@
     <main>
       <div class="slg box-main3-slg">
         <h1 data-aos="flip-up">Berbelanja di tempat kami anda akan percaya diri dan puas karena perusahaan kami sudah berbadan hukum, bergaransi akan kualitas dan harga yang competitif</h1>
-        <a href="https://api.whatsapp.com/send/?phone=%2B6281219549871&text&app_absent=0">
+        <a href="https://wa.me/6281219549871">
           <div class="btn-contact" data-aos="flip-left">
             <p>Contact Us</p>
           </div>
