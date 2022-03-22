@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+    <!-- icon title -->
+    <link rel="icon" href="../assets/img/icon/icon-react.png" /> <!-- Bisa diubah icon anda -->
+
   </head>
   <body id="body">
     <header>
@@ -54,10 +57,13 @@
               <p data-aos="fade-up">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
               </p>
-              <div class="box-contact" data-aos="zoom-in">
-                <i class="fa-brands fa-whatsapp"></i>
-                <p>Contact Us</p>
-              </div>
+              
+              <a href="" class="box-button-contact">
+                <div class="box-contact" data-aos="zoom-in">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <p>Contact Us</p>
+                </div>
+              </a> 
             </div>
             <div class="top-box2">
               <div class="square-box1" data-aos="zoom-in"></div>

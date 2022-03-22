@@ -199,6 +199,10 @@
   .box-main2-about .about-kn p {
     text-align: justify;
   }
+  .top-box1 .box-contact:hover::before {
+    width: 300px;
+    height: 300px;
+  }
   main .box-main3-slg {
     position: relative;
     width: 80%;
@@ -318,10 +322,14 @@
   header nav ul ul.active {
     display: none;
   }
-
+  .top-box1 .box-contact:hover::before {
+    width: 250px;
+    height: 250px;
+  }
   /* main */
   .top-box .top-box1 {
     width: 100%;
+    z-index: 1;
   }
   .top-box1 .text1,
   .top-box1 .text1 span {
