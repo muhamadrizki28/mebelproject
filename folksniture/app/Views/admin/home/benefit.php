@@ -11,6 +11,15 @@
                         <div class="card-header">
                             <h4> Benefit</h4>
                         </div>
+                        <div class="card-body" style="display: flex;">
+                            <div class="foto-dashboard" style="background-image: url(/assets/img/);">
+                                <!-- <img src="/assets/img/" alt="">  -->
+                            </div>
+                            <div class="form-group" style="width: 100%;" >
+                                <label for="formGroupExampleInput">Ubah Foto*</label>
+                                <input type="file" value="" name="img_header" class="form-control">
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
