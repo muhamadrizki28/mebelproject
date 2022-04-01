@@ -57,6 +57,16 @@ class Section extends BaseController
 		    ]);
         }
         
+        return redirect()->to('Section/edit/'.$id);
+    }
+
+    public function updatecontact($id)
+    {
+        $this->contactModel->save([ //auto save tanpa model
+            'id' => $id,
+			'deskripsi' => $this->request->getVar('deskripsi'),
+            'no_wa' => $this->request->getVar('no_wa')
+		]);
 
         return redirect()->to('Section/edit/'.$id);
     }
