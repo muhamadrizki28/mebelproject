@@ -165,10 +165,10 @@
                   <img src="../assets/img/folksniture/16_detail laci_compress65.jpg" alt="Gambar disini" class="gallery__img" />
                 </div>
                 <label for="img-3" class="gallery__thumb gallery__thumb3">
-                  <h1>LAINNYA</h1>
+                  <h1>Detail</h1>
                 </label>
               </div>
-              <div class="gallery__item">
+              <!-- <div class="gallery__item">
                 <input type="radio" name="gallery" id="img-4" checked class="gallery__selector" />
                 <div class="box-image-all box-imagee4">
                   <img src="../assets/img/folksniture/12_serong kiri_compress29.jpg" alt="" class="gallery__img" />
@@ -178,7 +178,7 @@
                 <label for="img-4" class="gallery__thumb gallery__thumb4">
                   <h1>Bangku lagi</h1>
                 </label>
-              </div>
+              </div> -->
               <div class="gallery__item">
                 <input type="radio" name="gallery" id="img-1" checked class="gallery__selector" />
                 <div class="box-image-all box-imagee1">
