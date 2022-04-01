@@ -235,11 +235,9 @@
           </div>
         </div>
         <div class="about-kn">
-          <h1 data-aos="fade-up">Lorem Ipsum is simply</h1>
+          <h1 data-aos="fade-up">Mengapa Folskniture?</h1>
           <p data-aos="fade-down" data-aos-duration="1900">
-            Sangatlah tepat jika anda berbelanja furniture ditempat kami karena kepuasan pelanggan yang kami utamakan, baik dari sisi konstruksi product, finishing produk, kekeringan kayu, garansi 3 tahun serta kualitas yang kami jaga demi
-            kelancaran kita berbisnis untuk kedepannya. Untuk itu anda bisa mendatangi tempat produksi sampai ketempat finishing produk kami dan anda bisa memesan produk kami via online atau anda langsung datang ke workshop langsung.
-          </p>
+            Kami sangat mengutamakan kepuasan pelanggan, baik dari sisi kekeringan kayu, konstruksi produk, finishing produk, garansi, serta kualitas yang kami jaga demi kepuasan pelanggan dan kelancaran kami berbisnis untuk kedepannya.          </p>
         </div>
       </div>
     </main>

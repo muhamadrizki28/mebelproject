@@ -254,9 +254,11 @@
               <li class="menu-header">Admin</li>
               <li><a class="nav-link" href="/admin"><i class="fas fa-pencil-ruler"></i> <span>Dashboard</span></a></li>
               <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Header</span></a></li>
-              <li><a class="nav-link" href="/benefit/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Benefit</span></a></li>
+              <li><a class="nav-link" href="/benefit/edit/1"><i class="fas fa-file-alt"></i> <span>Benefit</span></a></li>
+              <li><a class="nav-link" href="/product/edit/1"><i class="fas fa-th"></i> <span>Product</span></a></li>
+              <li><a class="nav-link" href="/section/edit/1"><i class="fas fa-columns"></i> <span>Section</span></a></li>
               <li class="menu-header">gatau ini nanti diisi apaan</li>
-              <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>test</span></a></li>
+              <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Section</span></a></li>
               </ul>
 
             <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
