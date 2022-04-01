@@ -53,7 +53,7 @@
                       <h4>Header Image</h4>
                     </div>
                     <div class="card-body" style="display: flex;">
-                      <div class="foto-dashboard" style="background-image: url(/assets/img/<?= $header['img_header']; ?>);">
+                      <div class="foto-dashboard-header" style="background-image: url(/assets/img/<?= $header['img_header']; ?>);">
                         <!-- <img src="/assets/img/" alt="">  -->
                       </div>
                       <div class="form-group" style="width: 100%;" >
