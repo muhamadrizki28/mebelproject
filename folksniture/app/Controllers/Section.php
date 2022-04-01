@@ -19,9 +19,11 @@ class Section extends BaseController
     public function edit($id)
     {
         $section = $this->sectionModel->where(['id' => $id])->first();
+        $contact = $this->contactModel->where(['id' => $id])->first();
         $data = [
             'title'     => 'Section',
-            'section'    => $section
+            'section'    => $section,
+            'contact'    => $contact
         ];
         return view('Admin/home/section.php', $data);
     }

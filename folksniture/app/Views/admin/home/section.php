@@ -65,12 +65,12 @@
                     <div class="card-body" >
                       <div class="form-group">
                         <label for="">Deskripsi</label>
-                        <textarea style="height:100px;" class="form-control" id="deskripsi" name="deskripsi" value="<?= $section['deskripsi']; ?>"><?= $section['deskripsi']; ?></textarea>
+                        <textarea style="height:100px;" class="form-control" id="deskripsi" name="deskripsi" value="<?= $contact['deskripsi']; ?>"><?= $contact['deskripsi']; ?></textarea>
                       </div>
                       <div class="form-group">
-                          <input type="hidden" value="<?= $section['id']; ?>">
+                          <input type="hidden" value="<?= $contact['id']; ?>">
                           <label for="">Nomor Whatsapp</label>
-                          <input type="text" class="form-control" id="no_wa" name="no_wa" value="<?= $section['no_wa']; ?>">
+                          <input type="text" class="form-control" id="no_wa" name="no_wa" value="<?= $contact['no_wa']; ?>">
                       </div>
                     </div>
                     <div class="card-footer text-right">
