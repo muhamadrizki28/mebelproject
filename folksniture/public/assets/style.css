@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* Rizki */
 header {
   width: 100%;
   height: 69px;
@@ -464,6 +463,8 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  /* untuk 4 jenis hapus ini */
+  padding-left: 15%;
 }
 .gallery__thumb1 h1,
 .gallery__thumb2 h1,
@@ -480,13 +481,17 @@ main {
   position: absolute;
   /* top: -67.2rem; */
   top: 0;
-  padding-left: 25%;
+  /* untuk 4 jenis */
+  /* padding-left: 25%; */
+  padding-left: 40%;
 }
 .gallery__thumb3 {
   position: absolute;
   /* top: -67.2rem; */
   top: 0;
-  padding-left: 50%;
+  /* Untuk 4 Jenis */
+  /* padding-left: 50%; */
+  padding-left: 65%;
 }
 .gallery__thumb4 {
   position: absolute;
@@ -604,7 +609,6 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-/* EKAAAA */
 .about {
   display: flex;
   margin: 100px;
