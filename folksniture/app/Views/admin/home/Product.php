@@ -40,7 +40,7 @@
                                 <option  value="Bangku">Bangku</option>
                                 <option value="Lemari">Lemari</option>
                                 <option value="Meja">Meja</option>
-                                <option value="Lainnya">Lainnya</option>
+                                <option value="lainnya">lainnya</option>
                               </select>
                             </div>
                             <div class="form-group" style="width: 100%;" >
