@@ -4,8 +4,15 @@
 
 <div class="row">
     
+            
+            
               <div class="col-12">
                 
+                  <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                    <div class="alert alert-danger">
+                        <?php echo session()->getFlashdata('gagal');?>
+                    </div>
+                  <?php } ?>
                   <?= csrf_field(); ?> 
 
                   <div class="row">
@@ -27,12 +34,10 @@
                   <form action="/product/save" method="POST" enctype="multipart/form-data">
                         <div class="card">
                         <div class="card-body">
-                          
-                            
                             <div class="form-group">
                               <label>Jenis </label>
-                              <select class="form-control form-control-sm">
-                                <option value="Bangku">Bangku</option>
+                              <select class="form-control form-control-sm" name="jenis" required>
+                                <option  value="Bangku">Bangku</option>
                                 <option value="Lemari">Lemari</option>
                                 <option value="Meja">Meja</option>
                                 <option value="Lainnya">Lainnya</option>
@@ -40,15 +45,14 @@
                             </div>
                             <div class="form-group" style="width: 100%;" >
                                 <label for="formGroupExampleInput">Ubah Foto</label>
-                                <input type="file" value="" name="img_ben1" class="form-control">
+                                <input type="file" value="" name="img" class="form-control">
                             </div>
-                            
                           </div>
                           <div class="card-footer text-right">
                                 <button class="btn btn-primary mr-1" type="submit">Submit</button>
                             </div>
                         </div>
-                </form>
+                  </form>
                 
                 </div>
 

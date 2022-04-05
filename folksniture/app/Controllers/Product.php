@@ -34,15 +34,24 @@ class Product extends BaseController
     // insert data
     public function save()
     {
-        $this->productModel->save([ //auto save tanpa model
-			'judul_1' => $this->request->getVar('judul_1'),
-            'judul_2' => $this->request->getVar('judul_2'),
-			'deskripsi' => $this->request->getVar('deskripsi'),
-			'no_Wa' => $this->request->getVar('no_Wa'),
-			'img_header' => $this->request->getVar('img_header'),
-		]);
+        $validation_foto = $this->validate([
+            'img' => 'uploaded[img]|mime_in[img,image/jpg,image/jpeg,image/gif,image/png]|max_size[img,10000]'       
+        ]);
 
-		return redirect()->to('/admin');
+        if ($validation_foto == false){
+            return redirect()->to('/product')->with('gagal', '<b>Foto Gagal di upload');
+        } else{
+            $upload = $this->request->getFile('img');
+		    $upload->move('assets/img');
+
+            $this->productModel->save([ //auto save tanpa model
+			    'jenis' => $this->request->getVar('jenis'),
+                'img' => $upload->getName()
+                
+		    ]);
+        return redirect()->to('/product');
+        }
+        
     }
 
     public function delete($id)
