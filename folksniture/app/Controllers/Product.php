@@ -2,25 +2,42 @@
 
 namespace App\Controllers;
 use App\Models\ProductModel;
+use App\Models\JudproductModel;
 
 class Product extends BaseController
 {
     protected $productModel;
+    protected $judproductModel;
 
     public function __construct()
 	{
+		$this->judproductModel = new JudproductModel();
 		$this->productModel = new ProductModel();
 	}
     
     public function index()
     {
-        $product = $this->productModel->findAll();
+        $product    = $this->productModel->findAll();
+        $judproduct = $this->judproductModel->where(['id' => 1])->first();
         $data = [
             'title'     => 'Product',
-            'product'    => $product
+            'product'    => $product,
+            'judproduct'    => $judproduct
         ];
         return view('admin/home/product.php', $data);
     }
+
+    public function update($id)
+    {
+        $this->judproductModel->save([ //auto save tanpa model
+            'id' => $id,
+			'deskripsi' => $this->request->getVar('deskripsi'),
+			'judul' => $this->request->getVar('judul'),
+		]);
+
+        return redirect()->to('/Product');
+    }
+
 
     public function create()
     {

@@ -31,7 +31,7 @@
                       <textarea style="height:100px;" class="form-control" id="deskripsi" name="deskripsi" value="<?= $header['deskripsi']; ?>"><?= $header['deskripsi']; ?></textarea>
                     </div>
                     <div class="form-group">
-                    <label for="">Nomor Whatsapp</label>
+                    <label for="">Nomor Whatsapp <i style="color: lightblue;">contoh : 6281219549871</i></label>
                         <input type="text" class="form-control" id="no_wa" name="no_Wa" value="<?= $header['no_wa']; ?>">
                       </div>
                   </div>
