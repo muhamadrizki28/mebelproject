@@ -274,25 +274,25 @@
           <ul>
             <li>
               <a href="https://wa.me/<?= $contact['no_wa']; ?>">
-                <img src="/assets/img/icon/wa-white.png" alt="" />
+                <img src="/assets/img/wa-white.png" alt="" />
                 <p>+<?= $contact['no_wa']; ?></p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/assets/img/icon/fb.png" alt="" />
+                <img src="/assets/img/fb.png" alt="" />
                 <p>folksniture.id</p>
               </a>
             </li>
             <li>
               <a href="mailto:sales@folksniture.id">
-                <img src="/assets/img/icon/email.png" alt="" />
+                <img src="/assets/img/email.png" alt="" />
                 <p>sales@folksniture.id</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img style="height: 30px; width: 30px" src="/assets/img/icon/map.png" alt="" />
+                <img style="height: 30px; width: 30px" src="/assets/img/map.png" alt="" />
                 <p>Desa Suwawal Timur RT 03 RW 02 Kec. Pakis Aji kab. Jepara 59452, Jawa Tengah Indonesia</p>
               </a>
             </li>
