@@ -25,7 +25,7 @@ class Section extends BaseController
             'section'    => $section,
             'contact'    => $contact
         ];
-        return view('Admin/home/section.php', $data);
+        return view('admin/home/section.php', $data);
     }
 
     public function update($id)

@@ -30,13 +30,7 @@ class Home extends BaseController
 
 	public function index()
 	{
-		// $x['header']= $header->tampilJenisProgram()->getResultArray();
-		// $x['benefit']= $benefit->tampilJenisRegion()->getResultArray();
-		// $x['contact']= $contact->tampilJenisRegion()->getResultArray();
-		// $x['productbangku']= $product->tampilEventsTerbaru()->getResultArray();
-		// $x['section']= $section->tampilMenuEventsHome()->getResultArray();
-
-		// $header = $this->headerModel->findAll();
+		
 		$header = $this->headerModel->where(['id' => 1])->first();
 		$benefit = $this->benefitModel->where(['id' => 1])->first();
 		$judproduct = $this->judproductModel->where(['id' => 1])->first();
