@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 header {
   width: 100%;
@@ -44,8 +44,8 @@ header nav ul li {
   margin: 24px 18px;
 }
 header nav ul #produk::after {
-  content: '\f0d7';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
   display: block;
   font-weight: bold;
   margin: 1.5px 0 0 5px;
@@ -101,7 +101,7 @@ a.box-button-contact {
   color: #fff;
 }
 .top-box1 .box-contact::before {
-  content: '';
+  content: "";
   position: absolute;
   top: var(--y);
   left: var(--x);
@@ -130,7 +130,8 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #eeedde;
+  background-color: #ebcc76;
+  /* warna */
 }
 .top-box > section {
   position: relative;
@@ -155,7 +156,7 @@ main {
 .top-box1 .text1,
 .top-box1 .text1 span,
 .top-box1 .text2 {
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   font-size: 55px;
   /* line-height: 80px; */
   color: #141414;
@@ -242,7 +243,8 @@ main {
 .middle-box .middle-color1 {
   width: 100%;
   height: 50%;
-  background-color: #eeedde;
+  background-color: #ebcc76;
+  /* warna */
 }
 .middle-box .middle-color2 {
   width: 100%;
@@ -348,7 +350,7 @@ main {
 }
 .product-box .product-top-text h1 {
   position: relative;
-  font-family: 'Secular One';
+  font-family: "Secular One";
   font-weight: 400;
   font-size: 96px;
 
@@ -356,7 +358,7 @@ main {
 }
 .product-box .product-top-text p {
   position: relative;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
   font-size: 14px;
   padding: 0 6rem;
@@ -527,7 +529,7 @@ main {
 }
 .product-box .box-other-text h1 {
   position: relative;
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   text-align: center;
   font-weight: 400;
   font-size: 46px;
@@ -543,7 +545,7 @@ main {
   justify-content: center;
 }
 .product-box-other .box-other-image .box-other-all::before {
-  content: '';
+  content: "";
   display: block;
   width: 53px;
   height: 55px;
@@ -658,7 +660,7 @@ main {
   margin-top: 70px;
 }
 .about-kn h1 {
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 .about-kn p {
   margin-top: 25px;
@@ -674,7 +676,7 @@ main {
   color: black;
 }
 .slg h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .btn-contact {
   display: flex;
